@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "geokit_aws_geoplaces"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Adam Anderson"]
   spec.email         = ["adam@makeascene.com"]
   spec.summary       = %q{Geokit custom geocoder for AWS GeoPlaces service}
