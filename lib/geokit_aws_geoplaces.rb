@@ -24,6 +24,9 @@ module Geokit
         return GeoLoc.new unless res.successful?
 
         parse_response res
+      rescue => e
+        logger.error("AwsGeoplacesGeocoder error for #{address.inspect}: #{e.class}: #{e.message}")
+        GeoLoc.new
       end
 
       def self.parse_response(res)
